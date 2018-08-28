@@ -43,9 +43,13 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=7.0.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AutoMapper.7.0.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="FluentValidation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
       <HintPath>..\..\packages\FluentValidation.8.0.0\lib\net45\FluentValidation.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Annotations, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\System.ComponentModel.Annotations.4.4.1\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
@@ -56,6 +60,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
@@ -100,6 +105,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Query\Customer\CustomerDetails.vb" />
+    <Compile Include="Query\Customer\CustomerIndex.vb" />
+    <Compile Include="Query\Customer\GetCustomerDetails.vb" />
+    <Compile Include="Query\Customer\GetCustomersIndex.vb" />
+    <Compile Include="Query\Product\GetProductDetails.vb" />
+    <Compile Include="Query\Product\GetProductsIndex.vb" />
+    <Compile Include="Query\Product\ProductDetails.vb" />
+    <Compile Include="Query\Product\ProductIndex.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -123,9 +136,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Event\" />
-    <Folder Include="Query\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ArchitectureVbNet.Domain\ArchitectureVbNet.Domain.vbproj">
+      <Project>{864795e5-a1a8-412d-ab15-482a2995e483}</Project>
+      <Name>ArchitectureVbNet.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ArchitectureVbNet.Shared\ArchitectureVbNet.Shared.vbproj">
       <Project>{781DD319-E5F9-4F93-B7D9-FA3B2F7140DA}</Project>
       <Name>ArchitectureVbNet.Shared</Name>

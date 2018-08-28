@@ -1,5 +1,4 @@
 ﻿Imports ArchitectureVbNet.CqrsClient.Command.Customer.Validation
-Imports FluentValidation.Results
 
 Namespace Command.Customer
     Public Class UpdateCustomer

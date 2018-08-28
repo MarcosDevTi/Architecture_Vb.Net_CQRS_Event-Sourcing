@@ -1,3 +1,5 @@
-﻿Public Class ProductCommandHandler
+﻿Namespace Handlers.Product
+    Public Class ProductCommandHandler
 
-End Class
+    End Class
+End NameSpace
