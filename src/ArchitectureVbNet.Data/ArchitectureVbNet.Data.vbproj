@@ -122,6 +122,10 @@
     <Folder Include="Handlers\Order\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ArchitectureVbNet.CqrsClient\ArchitectureVbNet.CqrsClient.vbproj">
+      <Project>{DBB4FD1E-8B4A-4953-B43B-F3C142C1CE65}</Project>
+      <Name>ArchitectureVbNet.CqrsClient</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ArchitectureVbNet.DomainCore\ArchitectureVbNet.DomainCore.vbproj">
       <Project>{E0CDD455-51A5-46B3-AE95-B37930FCE1AF}</Project>
       <Name>ArchitectureVbNet.DomainCore</Name>
@@ -129,6 +133,10 @@
     <ProjectReference Include="..\ArchitectureVbNet.Domain\ArchitectureVbNet.Domain.vbproj">
       <Project>{864795E5-A1A8-412D-AB15-482A2995E483}</Project>
       <Name>ArchitectureVbNet.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArchitectureVbNet.Shared\ArchitectureVbNet.Shared.vbproj">
+      <Project>{781DD319-E5F9-4F93-B7D9-FA3B2F7140DA}</Project>
+      <Name>ArchitectureVbNet.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

@@ -1,3 +1,5 @@
-﻿Public Class CustomerQueryHandler
+﻿Namespace Handlers.Customer
+    Public Class CustomerQueryHandler
 
-End Class
+    End Class
+End NameSpace

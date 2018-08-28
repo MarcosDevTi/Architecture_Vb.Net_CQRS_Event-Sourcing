@@ -1,7 +1,7 @@
 ﻿Imports FluentValidation.Results
 
 Namespace Cqrs.Command
-    Public MustInherit Class Command
+    Public MustInherit Class CommandRequest
         Inherits Message
         Protected Sub New()
            Timestamp = DateTime.Now

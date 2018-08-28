@@ -77,7 +77,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cqrs\Command\Command.vb" />
+    <Compile Include="Cqrs\Command\CommandRequest.vb" />
     <Compile Include="Cqrs\Command\CommandEvent.vb" />
     <Compile Include="Cqrs\Command\ICommandHandler.vb" />
     <Compile Include="Cqrs\Command\IRequest.vb" />

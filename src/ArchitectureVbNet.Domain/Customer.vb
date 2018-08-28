@@ -10,11 +10,10 @@ Public Class Customer
                    name As String,
                    email As String,
                    birthDate As Date,
-                   orders As ICollection(Of Order))
+                   Optional id As Guid = Nothing)
         Me.Name = name
         Me.Email = email
         Me.BirthDate = birthDate
-        Me.Orders = orders
     End Sub
 
     Public Property Name As String
