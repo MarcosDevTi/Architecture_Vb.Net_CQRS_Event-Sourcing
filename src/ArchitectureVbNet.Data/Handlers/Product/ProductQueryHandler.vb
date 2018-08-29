@@ -1,4 +1,5 @@
-﻿Imports ArchitectureVbNet.CqrsClient.Query.Product
+﻿Imports ArchitectureVbNet.CqrsClient.Query.Customer
+Imports ArchitectureVbNet.CqrsClient.Query.Product
 Imports ArchitectureVbNet.Shared.Cqrs.Query
 Imports AutoMapper.QueryableExtensions
 
@@ -11,8 +12,8 @@ Namespace Handlers.Product
             _context = context
         End Sub
 
-        Public Function Handle(query As GetProductsIndex) As IReadOnlyList(Of ProductIndex) Implements IQueryHandler(Of GetProductsIndex,IReadOnlyList(Of ProductIndex)).Handle
-            Return _context.Products.ProjectTo(Of ProductIndex)
+        Public Function Handle(query As GetProductsIndex) As IReadOnlyList(Of ProductIndex) Implements IQueryHandler(Of GetProductsIndex, IReadOnlyList(Of ProductIndex)).Handle
+            Return _context.Products.ProjectTo(Of ProductIndex).ToList()
         End Function
     End Class
-End NameSpace
+End Namespace

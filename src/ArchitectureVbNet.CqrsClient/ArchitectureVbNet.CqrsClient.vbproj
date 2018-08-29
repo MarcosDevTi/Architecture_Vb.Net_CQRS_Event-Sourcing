@@ -90,6 +90,14 @@
     <Compile Include="Command\Customer\Validation\CustomerCommandValidation.vb" />
     <Compile Include="Command\Customer\Validation\DeleteCustomerValidation.vb" />
     <Compile Include="Command\Customer\Validation\UpdateCustomerValidation.vb" />
+    <Compile Include="Command\Product\CreateProduct.vb" />
+    <Compile Include="Command\Product\DeleteProduct.vb" />
+    <Compile Include="Command\Product\ProductCommand.vb" />
+    <Compile Include="Command\Product\UpdateProduct.vb" />
+    <Compile Include="Command\Product\Validation\CreateProductValidation.vb" />
+    <Compile Include="Command\Product\Validation\DeleteProductValidation.vb" />
+    <Compile Include="Command\Product\Validation\ProductCommandValidation.vb" />
+    <Compile Include="Command\Product\Validation\UpdateProductValidation.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -138,6 +146,10 @@
     <Folder Include="Event\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ArchitectureVbNet.DomainCore\ArchitectureVbNet.DomainCore.vbproj">
+      <Project>{E0CDD455-51A5-46B3-AE95-B37930FCE1AF}</Project>
+      <Name>ArchitectureVbNet.DomainCore</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ArchitectureVbNet.Domain\ArchitectureVbNet.Domain.vbproj">
       <Project>{864795e5-a1a8-412d-ab15-482a2995e483}</Project>
       <Name>ArchitectureVbNet.Domain</Name>

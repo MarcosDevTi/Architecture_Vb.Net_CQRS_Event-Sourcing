@@ -141,6 +141,10 @@
       <Project>{2BC2BD23-E53F-4302-AC5B-9757E36E88BC}</Project>
       <Name>ArchitectureVbNet.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ArchitectureVbNet.DomainCore\ArchitectureVbNet.DomainCore.vbproj">
+      <Project>{E0CDD455-51A5-46B3-AE95-B37930FCE1AF}</Project>
+      <Name>ArchitectureVbNet.DomainCore</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ArchitectureVbNet.Shared\ArchitectureVbNet.Shared.vbproj">
       <Project>{781DD319-E5F9-4F93-B7D9-FA3B2F7140DA}</Project>
       <Name>ArchitectureVbNet.Shared</Name>

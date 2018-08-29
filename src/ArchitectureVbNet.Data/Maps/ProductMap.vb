@@ -9,7 +9,7 @@ Namespace Maps
             ToTable("Products")
             HasKey(Function(p) p.Id)
             [Property](Function(p) p.Name).HasMaxLength(30).IsRequired()
-            [Property](Function(p) p.Description).HasMaxLength(150)
+            [Property](Function(p) p.DescriptionProduct).HasMaxLength(150)
         End Sub
         
     End Class

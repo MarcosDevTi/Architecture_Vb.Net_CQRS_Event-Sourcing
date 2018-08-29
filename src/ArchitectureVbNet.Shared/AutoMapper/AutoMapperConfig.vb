@@ -3,12 +3,12 @@
 Namespace AutoMapper
     Public Module AutoMapperConfig
         Sub LoadMapsFromAssemblies(Of T)()
-            Dim assemblieTypes = GetType(T).Assembly.ExportedTypes
+            Dim assemblieTypes = GetType(T).Assembly.ExportedTypes.ToList()
             Mapper.Initialize(
                 Sub(cfg)
                     LoadCustom(cfg, assemblieTypes)
-                    LoadMapFrom(cfg, assemblieTypes)
-                    LoadMapTo(cfg, assemblieTypes)
+                    'LoadMapFrom(cfg, assemblieTypes)
+                    'LoadMapTo(cfg, assemblieTypes)
                 End Sub)
         End Sub
 

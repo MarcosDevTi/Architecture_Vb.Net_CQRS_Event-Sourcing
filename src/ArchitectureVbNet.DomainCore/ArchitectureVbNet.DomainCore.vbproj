@@ -80,6 +80,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DomainNotifications\DomainNotification.vb" />
+    <Compile Include="DomainNotifications\DomainNotificationHandler.vb" />
+    <Compile Include="DomainNotifications\IDomainNotification.vb" />
     <Compile Include="EventE\StoredEvent.vb" />
     <Compile Include="Models\Entity.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

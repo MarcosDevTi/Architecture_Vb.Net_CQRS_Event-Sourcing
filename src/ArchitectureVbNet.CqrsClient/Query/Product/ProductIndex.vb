@@ -1,4 +1,5 @@
-﻿Imports ArchitectureVbNet.Shared.AutoMapper
+﻿Imports System.Linq.Expressions
+Imports ArchitectureVbNet.Shared.AutoMapper
 Imports AutoMapper
 
 Namespace Query.Product
@@ -10,7 +11,9 @@ Namespace Query.Product
         Public Property Price As Decimal
 
         Public Sub CreateMaps(cfg As IMapperConfigurationExpression) Implements ICustomMap.CreateMaps
-            cfg.CreateMap(Of Domain.Product, ProductIndex)
+            cfg.CreateMap(Of Domain.Product, ProductIndex)() _
+                .ForMember(Function(dest) dest.Description, Sub(opt) opt.MapFrom(Function(src) src.DescriptionProduct))
         End Sub
+
     End Class
 End NameSpace

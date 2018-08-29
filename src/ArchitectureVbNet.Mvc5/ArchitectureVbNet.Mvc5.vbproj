@@ -183,6 +183,8 @@
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Controllers\BaseController.vb" />
+    <Compile Include="Controllers\CustomerController.vb" />
     <Compile Include="Controllers\ProductController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
@@ -247,6 +249,8 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <Content Include="Views\Product\Index.vbhtml" />
+    <Content Include="Views\Customer\Index.vbhtml" />
+    <Content Include="Views\Customer\Create.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -283,6 +287,10 @@
     <ProjectReference Include="..\ArchitectureVbNet.CqrsClient\ArchitectureVbNet.CqrsClient.vbproj">
       <Project>{DBB4FD1E-8B4A-4953-B43B-F3C142C1CE65}</Project>
       <Name>ArchitectureVbNet.CqrsClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArchitectureVbNet.DomainCore\ArchitectureVbNet.DomainCore.vbproj">
+      <Project>{E0CDD455-51A5-46B3-AE95-B37930FCE1AF}</Project>
+      <Name>ArchitectureVbNet.DomainCore</Name>
     </ProjectReference>
     <ProjectReference Include="..\ArchitectureVbNet.IoC\ArchitectureVbNet.IoC.vbproj">
       <Project>{EE0835A9-07C7-4987-8AC9-098FFCAEA813}</Project>

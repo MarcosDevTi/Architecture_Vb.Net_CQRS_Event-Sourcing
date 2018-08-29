@@ -10,10 +10,10 @@ Namespace Controllers
         Sub New(processor As IProcessor)
             _processor = processor
         End Sub
-        ' GET: Product
+        
         Function Index() As ActionResult
             Dim products = _processor.Process(new GetProductsIndex())
-            Return View()
+            Return View(products)
         End Function
     End Class
 End Namespace

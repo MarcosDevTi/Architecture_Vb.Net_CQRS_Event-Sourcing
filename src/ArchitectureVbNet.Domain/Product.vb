@@ -15,11 +15,11 @@ Public Class Product
 
         Me.Id = If(id Is Nothing, Guid.NewGuid(), Me.Id)
         Me.Name = name
-        Me.Description = description
+        Me.DescriptionProduct = description
         Me.Price = price
     End Sub
 
     Public Property Name As String
-    Public Property Description As String
+    Public Property DescriptionProduct As String
     Public Property Price As Decimal
 End Class

@@ -13,9 +13,10 @@ Public Class ArchitectureVbNetContext
     Public Property Orders As DbSet(Of Order)
 
     Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
-        modelBuilder.Conventions.Add(new ProductMap())
-        modelBuilder.Conventions.Add(new OrderItemMap())
-        modelBuilder.Conventions.Add(new OrderMap())
-        modelBuilder.Conventions.Add(new CustomerMap())
+        'modelBuilder.Conventions.Add(new ProductMap())
+        'modelBuilder.Conventions.Add(new OrderItemMap())
+        'modelBuilder.Conventions.Add(new OrderMap())
+        'modelBuilder.Conventions.Add(new CustomerMap())
+        'MyBase.OnModelCreating(modelBuilder)
     End Sub
 End Class

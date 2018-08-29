@@ -4,9 +4,10 @@ Namespace Command.Customer
     Public Class CreateCustomer
         Inherits CustomerCommand
 
-        Protected Sub New()
+        public Sub New()
             'Ctor AutoMapper Reflection Registrations
         End Sub
+
         Protected Sub New(
                           id As Guid?,
                           name As String,

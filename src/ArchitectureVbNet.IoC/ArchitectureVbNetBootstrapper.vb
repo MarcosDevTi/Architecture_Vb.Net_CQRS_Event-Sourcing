@@ -1,6 +1,8 @@
 ﻿Imports System.Web.Mvc
 Imports ArchitectureVbNet.CqrsClient.Command.Customer
 Imports ArchitectureVbNet.Data.Handlers.Customer
+Imports ArchitectureVbNet.DomainCore
+Imports ArchitectureVbNet.DomainCore.DomainNotifications
 Imports ArchitectureVbNet.IoC.Extentions
 Imports ArchitectureVbNet.Shared.AutoMapper
 Imports ArchitectureVbNet.Shared.Cqrs
@@ -18,5 +20,6 @@ Public Module ArchitectureVbNetBootstrapper
         AutoMapperConfig.LoadMapsFromAssemblies(Of CreateCustomer)
         container.AddCqrs(Of CustomerQueryHandler)
         container.Register(Of IProcessor, Processor)
+        container.Register(Of IDomainNotification, DomainNotificationHandler)
     End Sub
 End Module

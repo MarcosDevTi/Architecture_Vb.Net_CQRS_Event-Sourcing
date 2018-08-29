@@ -10,7 +10,8 @@ Public Class Customer
                    name As String,
                    email As String,
                    birthDate As Date,
-                   Optional id As Guid = Nothing)
+                   Optional id As Guid? = Nothing)
+        Me.Id = If(id Is Nothing, Guid.NewGuid(), Me.Id)
         Me.Name = name
         Me.Email = email
         Me.BirthDate = birthDate
